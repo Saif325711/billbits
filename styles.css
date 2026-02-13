@@ -684,11 +684,51 @@ main {
   .hero-card {
     order: -1;
   }
+
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
 }
 
 @media (max-width: 600px) {
+  .hero-card {
+    display: none;
+  }
+
   .hero-actions {
     flex-direction: column;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .service-head,
+  .about-head {
+    align-items: flex-start;
+  }
+
+  .service-icon,
+  .about-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links ul {
+    gap: 6px;
   }
 
   .about {
